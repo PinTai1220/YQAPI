@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL;
+
 using Model;
 using Commen;
+using DAL;
 
 namespace BLL
 {
-    public class UsersBLL : IDataservices<Users, UsersBLL>
+    public class BlogsBLL : IDataservices<Blogs, BlogsBLL>
     {
-        IDataservices<Users, UsersDAL> dal = UsersDAL.GetInstance();
-        public override int Create(Users t)
+        IDataservices<Blogs, BlogsDAL> dal = BlogsDAL.GetInstance();
+        public override int Create(Blogs t)
         {
             throw new NotImplementedException();
         }
@@ -22,17 +23,17 @@ namespace BLL
             throw new NotImplementedException();
         }
 
-        public override List<Users> Show()
+        public override List<Blogs> Show()
         {
             throw new NotImplementedException();
         }
 
-        public override Users ShowById(int id)
+        public override Blogs ShowById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public override int Update(Users t)
+        public override int Update(Blogs t)
         {
             throw new NotImplementedException();
         }

@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogsBLL.cs" />
+    <Compile Include="KindsBLL.cs" />
     <Compile Include="UsersBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Commen\Commen.csproj">
+      <Project>{0ce6d121-449b-4760-a572-c745923c7479}</Project>
+      <Name>Commen</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{547c3872-1b0d-4dab-9fa3-b337eb86ef68}</Project>
       <Name>DAL</Name>

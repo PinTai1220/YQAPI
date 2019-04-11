@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DAL;
-using Model;
 using Commen;
+using Model;
 
 namespace BLL
 {
-    public class UsersBLL : IDataservices<Users, UsersBLL>
+    public class KindsBLL:IDataservices<Kinds,KindsBLL>
     {
-        IDataservices<Users, UsersDAL> dal = UsersDAL.GetInstance();
-        public override int Create(Users t)
+        IDataservices<Kinds, KindsDAL> dal = KindsDAL.GetInstance();
+
+        public override int Create(Kinds t)
         {
             throw new NotImplementedException();
         }
@@ -22,17 +23,17 @@ namespace BLL
             throw new NotImplementedException();
         }
 
-        public override List<Users> Show()
+        public override List<Kinds> Show()
         {
             throw new NotImplementedException();
         }
 
-        public override Users ShowById(int id)
+        public override Kinds ShowById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public override int Update(Users t)
+        public override int Update(Kinds t)
         {
             throw new NotImplementedException();
         }

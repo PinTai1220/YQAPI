@@ -50,6 +50,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Commen\Commen.csproj">
+      <Project>{0ce6d121-449b-4760-a572-c745923c7479}</Project>
+      <Name>Commen</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
       <Project>{df08f59c-716c-4638-a0c0-c253a0cb4169}</Project>
       <Name>Model</Name>
