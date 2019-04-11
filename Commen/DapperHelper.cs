@@ -17,9 +17,19 @@ namespace Commen
         /// 增删改
         /// </summary>
         /// <param name="SqlStr">sql</param>
-        /// <param name="Obj">映射到sql中的对象，可以是集合</param>
+        /// <param name="Obj">映射到sql中的对象</param>
         /// <returns>受影响行数</returns>
         public int Execut(string SqlStr,object Obj)
+        {
+            return conn.Execute(SqlStr, Obj);
+        }
+        /// <summary>
+        /// 增删改
+        /// </summary>
+        /// <param name="SqlStr">sql</param>
+        /// <param name="Obj">映射到sql中的对象集合</param>
+        /// <returns>受影响行数</returns>
+        public int Execut(string SqlStr, List<object> Obj)
         {
             return conn.Execute(SqlStr, Obj);
         }
