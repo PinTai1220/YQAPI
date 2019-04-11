@@ -44,5 +44,14 @@ namespace Commen
             IEnumerable<T> ie= conn.Query<T>(SqlStr, Obj);
             return ie as List<T>;
         }
+        public List<dynamic> QueryObj(string SqlStr, object Obj)
+        {
+            var ie = conn.QueryMultiple(SqlStr, Obj);
+            if (!ie.IsConsumed)
+            {
+               return ie.Read(buffered: false).ToList();
+            }
+            return null;
+        }
     }
 }
