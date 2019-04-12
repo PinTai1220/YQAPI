@@ -28,7 +28,7 @@ namespace YQApi.Controllers
         {
             UserInfos.Delete(Id);
         }
-        public void Upd(UserInfos userInfos)
+        public void Update(UserInfos userInfos)
         {
             UserInfos.Update(userInfos);
         }

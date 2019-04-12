@@ -28,7 +28,7 @@ namespace YQApi.Controllers
         {
             Rooms.Delete(Id);
         }
-        public void Upd(Rooms rooms)
+        public void Update(Rooms rooms)
         {
             Rooms.Update(rooms);
         }

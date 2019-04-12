@@ -28,7 +28,7 @@ namespace YQApi.Controllers
         {
             Orders.Delete(Id);
         }
-        public void Upd(Orders orders)
+        public void Update(Orders orders)
         {
             Orders.Update(orders);
         }

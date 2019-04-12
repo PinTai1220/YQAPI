@@ -28,7 +28,7 @@ namespace YQApi.Controllers
         {
             Roles.Delete(Id);
         }
-        public void Upd(Roles roles)
+        public void Update(Roles roles)
         {
             Roles.Update(roles);
         }

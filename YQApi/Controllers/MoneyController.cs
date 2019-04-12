@@ -28,7 +28,7 @@ namespace YQApi.Controllers
         {
             Money.Delete(Id);
         }
-        public void Upd(Money money)
+        public void Update(Money money)
         {
             Money.Update(money);
         }
