@@ -11,6 +11,7 @@ using Autofac;
 using Autofac.Integration.WebApi;
 using BLL;
 using System.Reflection;
+using YQApi.Models;
 
 namespace YQApi
 {
@@ -19,7 +20,7 @@ namespace YQApi
         protected void Application_Start()
         {
             AutofacConfig.Run();
-
+            LoggerFactory.SetCurrent(new TraceSourceLogFactory());
 
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
