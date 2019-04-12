@@ -27,11 +27,13 @@ namespace YQApi.App_Start
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly()).PropertiesAutowired();
             
 
-            builder.RegisterType<Orders>().As<IDataservices<Orders>>();
+            builder.RegisterType<OrdersBLL>().As<IDataservices<Orders>>();
             builder.RegisterType<UserInfosBLL>().As<IDataservices<UserInfos>>();
-            builder.RegisterType<RoomsBLL>().As<IDataservices<Money>>();
-            builder.RegisterType<RolesBLL>().As<IDataservices<Rooms>>();
-
+            builder.RegisterType<RoomsBLL>().As<IDataservices<Rooms>>();
+            builder.RegisterType<RolesBLL>().As<IDataservices<Roles>>();
+            builder.RegisterType<MoneyBLL>().As<IDataservices<Money>>();
+            builder.RegisterType<AdminBLL>().As<IDataservices<Admin>>();
+            builder.RegisterType<RoomTypeBLL>().As<IDataservices<RoomType>>();
 
             var container = builder.Build();
             config.DependencyResolver = new AutofacWebApiDependencyResolver(container);
