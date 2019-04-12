@@ -13,12 +13,12 @@ namespace YQApi.Controllers
     public class ValuesController : ApiController
     {
 
-        public IDataservices<Orders> Blogs { get; set; }
+        //public IDataservices<Orders> Blogs { get; set; }
 
         // GET api/values
         public IEnumerable<string> Get()
         {
-            Blogs.Show();
+            //Blogs.Show();
             //Users.Show();
             return new string[] { "value1", "value2" };
         }
