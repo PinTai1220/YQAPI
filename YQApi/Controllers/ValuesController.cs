@@ -1,4 +1,7 @@
-﻿using System;
+﻿using BLL;
+using Commen;
+using Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,9 +12,14 @@ namespace YQApi.Controllers
 {
     public class ValuesController : ApiController
     {
+
+        public IDataservices<Orders> Blogs { get; set; }
+
         // GET api/values
         public IEnumerable<string> Get()
         {
+            Blogs.Show();
+            //Users.Show();
             return new string[] { "value1", "value2" };
         }
 

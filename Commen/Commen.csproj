@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DapperHelper.cs" />
     <Compile Include="DBHelper.cs" />
+    <Compile Include="IDALServices.cs" />
     <Compile Include="IDataservices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

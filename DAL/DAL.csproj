@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,12 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AttentionDAL.cs" />
-    <Compile Include="BlogsDAL.cs" />
-    <Compile Include="CommentsDAL.cs" />
-    <Compile Include="KindsDAL.cs" />
-    <Compile Include="RecommendsDAL.cs" />
-    <Compile Include="UsersDAL.cs" />
+    <Compile Include="AdminDAL.cs" />
+    <Compile Include="MoneyDAL.cs" />
+    <Compile Include="OrdersDAL.cs" />
+    <Compile Include="RolesDAL.cs" />
+    <Compile Include="RoomsDAL.cs" />
+    <Compile Include="RoomTypeDAL.cs" />
+    <Compile Include="UserInfosDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

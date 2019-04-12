@@ -41,9 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlogsBLL.cs" />
-    <Compile Include="KindsBLL.cs" />
-    <Compile Include="UsersBLL.cs" />
+    <Compile Include="AdminBLL.cs" />
+    <Compile Include="MoneyBLL.cs" />
+    <Compile Include="OrdersBLL.cs" />
+    <Compile Include="RolesBLL.cs" />
+    <Compile Include="RoomsBLL.cs" />
+    <Compile Include="RoomTypeBLL.cs" />
+    <Compile Include="UserInfosBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
