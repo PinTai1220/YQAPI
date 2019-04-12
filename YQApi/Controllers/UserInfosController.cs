@@ -12,23 +12,23 @@ namespace YQApi.Controllers
     public class UserInfosController : ApiController
     {
         public IDataservices<UserInfos> UserInfos { get; set; }
-        public void show()
+        public void Show()
         {
             UserInfos.Show();
         }
-        public void create(UserInfos userInfos)
+        public void Create(UserInfos userInfos)
         {
             UserInfos.Create(userInfos);
         }
-        public void showByid(int id)
+        public void ShowById(int Id)
         {
-            UserInfos.ShowById(id);
+            UserInfos.ShowById(Id);
         }
-        public void delete(int id)
+        public void Delete(int Id)
         {
-            UserInfos.Delete(id);
+            UserInfos.Delete(Id);
         }
-        public void upd(UserInfos userInfos)
+        public void Upd(UserInfos userInfos)
         {
             UserInfos.Update(userInfos);
         }

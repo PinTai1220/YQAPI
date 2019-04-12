@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Model
 {
+    /// <summary>
+    /// 用户表
+    /// </summary>
     public class UserInfos
     {
         public int UserInfo_Id { get; set; }

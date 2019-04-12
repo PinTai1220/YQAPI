@@ -12,23 +12,23 @@ namespace YQApi.Controllers
     public class RolesController : ApiController
     {
         public IDataservices<Roles> Roles { get; set; }
-        public void show()
+        public void Show()
         {
             Roles.Show();
         }
-        public void create(Roles roles)
+        public void Create(Roles roles)
         {
             Roles.Create(roles);
         }
-        public void showByid(int id)
+        public void ShowById(int Id)
         {
-            Roles.ShowById(id);
+            Roles.ShowById(Id);
         }
-        public void delete(int id)
+        public void Delete(int Id)
         {
-            Roles.Delete(id);
+            Roles.Delete(Id);
         }
-        public void upd(Roles roles)
+        public void Upd(Roles roles)
         {
             Roles.Update(roles);
         }

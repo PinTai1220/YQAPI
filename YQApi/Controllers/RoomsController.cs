@@ -12,23 +12,23 @@ namespace YQApi.Controllers
     public class RoomsController : ApiController
     {
         public IDataservices<Rooms> Rooms { get; set; }
-        public void show()
+        public void Show()
         {
             Rooms.Show();
         }
-        public void create(Rooms rooms)
+        public void Create(Rooms rooms)
         {
             Rooms.Create(rooms);
         }
-        public void showByid(int id)
+        public void ShowById(int Id)
         {
-            Rooms.ShowById(id);
+            Rooms.ShowById(Id);
         }
-        public void delete(int id)
+        public void Delete(int Id)
         {
-            Rooms.Delete(id);
+            Rooms.Delete(Id);
         }
-        public void upd(Rooms rooms)
+        public void Upd(Rooms rooms)
         {
             Rooms.Update(rooms);
         }

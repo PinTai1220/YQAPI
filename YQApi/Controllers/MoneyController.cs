@@ -12,23 +12,23 @@ namespace YQApi.Controllers
     public class MoneyController : ApiController
     {
         public IDataservices<Money> Money { get; set; }
-        public void show()
+        public void Show()
         {
             Money.Show();
         }
-        public void create(Money money)
+        public void Create(Money money)
         {
             Money.Create(money);
         }
-        public void showByid(int id)
+        public void ShowById(int Id)
         {
-            Money.ShowById(id);
+            Money.ShowById(Id);
         }
-        public void delete(int id)
+        public void Delete(int Id)
         {
-            Money.Delete(id);
+            Money.Delete(Id);
         }
-        public void upd(Money money)
+        public void Upd(Money money)
         {
             Money.Update(money);
         }

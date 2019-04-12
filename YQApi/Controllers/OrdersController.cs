@@ -12,23 +12,23 @@ namespace YQApi.Controllers
     public class OrdersController : ApiController
     {
         public IDataservices<Orders> Orders { get; set; }
-        public void show()
+        public void Show()
         {
             Orders.Show();
         }
-        public void create(Orders orders)
+        public void Create(Orders orders)
         {
             Orders.Create(orders);
         }
-        public void showByid(int id)
+        public void ShowByid(int Id)
         {
-            Orders.ShowById(id);
+            Orders.ShowById(Id);
         }
-        public void delete(int id)
+        public void Delete(int Id)
         {
-            Orders.Delete(id);
+            Orders.Delete(Id);
         }
-        public void upd(Orders orders)
+        public void Upd(Orders orders)
         {
             Orders.Update(orders);
         }
