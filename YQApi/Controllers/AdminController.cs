@@ -12,23 +12,25 @@ namespace YQApi.Controllers
     public class AdminController : ApiController
     {
         public IDataservices<Admin> Admin { get; set; }
-        public void Show()
+        [HttpGet]
+        public void show()
         {
             Admin.Show();
         }
-        public void Create(Admin admin)
+        [HttpPost]
+        public void create(Admin admin)
         {
             Admin.Create(admin);
         }
-        public void ShowById(int Id)
+        public void showByid(int id)
         {
-            Admin.ShowById(Id);
+            Admin.ShowById(id);
         }
-        public void Delete(int Id)
+        public void delete(int id)
         {
-            Admin.Delete(Id);
+            Admin.Delete(id);
         }
-        public void Upd(Admin admin)
+        public void Update(Admin admin)
         {
             Admin.Update(admin);
         }

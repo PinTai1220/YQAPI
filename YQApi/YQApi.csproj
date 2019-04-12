@@ -205,10 +205,16 @@
     <Compile Include="Controllers\RoomTypeController.cs" />
     <Compile Include="Controllers\UserInfosController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Filters\ApiHandleErrorAttribute.cs" />
+    <Compile Include="Filters\ApiSecurityFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AutoFacBootStrapper.cs" />
+    <Compile Include="Models\ILogger.cs" />
+    <Compile Include="Models\ILoggerFactory.cs" />
+    <Compile Include="Models\LoggerFactory.cs" />
+    <Compile Include="Models\TraceSourceLog.cs" />
+    <Compile Include="Models\TraceSourceLogFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
