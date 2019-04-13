@@ -12,6 +12,7 @@ namespace YQApi.Controllers
     public class UserInfosController : ApiController
     {
         public IDataservices<UserInfos> UserInfos { get; set; }
+        [HttpGet]
         public void Show()
         {
             UserInfos.Show();
