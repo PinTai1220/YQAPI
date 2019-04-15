@@ -12,10 +12,12 @@ namespace YQApi.Controllers
     public class OrdersController : ApiController
     {
         public IDataservices<Orders> Orders { get; set; }
-        public void Show()
+        [HttpGet]
+        public List<Orders> Show()
         {
-            Orders.Show();
+           return Orders.Show();
         }
+        [HttpPost]
         public void Create(Orders orders)
         {
             Orders.Create(orders);

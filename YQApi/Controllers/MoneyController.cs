@@ -12,10 +12,12 @@ namespace YQApi.Controllers
     public class MoneyController : ApiController
     {
         public IDataservices<Money> Money { get; set; }
-        public void Show()
+        [HttpGet]
+        public List<Money> Show()
         {
-            Money.Show();
+            return Money.Show();
         }
+        [HttpPost]
         public void Create(Money money)
         {
             Money.Create(money);

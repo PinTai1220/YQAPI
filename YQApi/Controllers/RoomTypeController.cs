@@ -12,10 +12,12 @@ namespace YQApi.Controllers
     public class RoomTypeController : ApiController
     {
         public IDataservices<RoomType> RoomType { get; set; }
-        public void Show()
+        [HttpGet]
+        public List<RoomType> Show()
         {
-            RoomType.Show();
+            return RoomType.Show();
         }
+        [HttpPost]
         public void Create(RoomType roomType)
         {
             RoomType.Create(roomType);

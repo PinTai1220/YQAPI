@@ -12,10 +12,12 @@ namespace YQApi.Controllers
     public class RolesController : ApiController
     {
         public IDataservices<Roles> Roles { get; set; }
-        public void Show()
+        [HttpGet]
+        public List<Roles> Show()
         {
-            Roles.Show();
+            return Roles.Show();
         }
+        [HttpPost]
         public void Create(Roles roles)
         {
             Roles.Create(roles);

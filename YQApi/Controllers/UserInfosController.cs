@@ -13,10 +13,11 @@ namespace YQApi.Controllers
     {
         public IDataservices<UserInfos> UserInfos { get; set; }
         [HttpGet]
-        public void Show()
+        public List<UserInfos> Show()
         {
-            UserInfos.Show();
+            return UserInfos.Show();
         }
+        [HttpPost]
         public void Create(UserInfos userInfos)
         {
             UserInfos.Create(userInfos);
