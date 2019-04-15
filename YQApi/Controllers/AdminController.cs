@@ -13,9 +13,9 @@ namespace YQApi.Controllers
     {
         public IDataservices<Admin> Admin { get; set; }
         [HttpGet]
-        public void Show()
+        public List<Admin> Show()
         {
-            Admin.Show();
+            return Admin.Show();
         }
         [HttpPost]
         public void Create(Admin admin)

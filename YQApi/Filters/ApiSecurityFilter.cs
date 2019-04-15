@@ -119,7 +119,7 @@ namespace YQApi.Filters
 
             #region 与传递过来的作比对
             {
-                var md5Staff = FormsAuthentication.HashPasswordForStoringInConfigFile(timestamp + nonce + staffId + data, "MD5").ToLower();
+                var md5Staff = FormsAuthentication.HashPasswordForStoringInConfigFile(timestamp + nonce + staffId + data, "MD5").ToUpper();
                 if (!md5Staff.Equals(signature))
                     throw new SecurityException("无权访问");
             }
