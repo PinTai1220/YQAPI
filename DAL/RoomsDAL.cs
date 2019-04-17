@@ -29,7 +29,7 @@ namespace DAL
 
         public   List<Rooms> Show()
         {
-            string sql = "select * from Rooms r join RoomType t on r.RoomType_Id=t.RoomType_Id";
+            string sql = "select r.Room_Id,r.Room_Num,r.Room_State,t.RoomType_Id,t.RoomType_Price from Rooms r join RoomType t on r.RoomType_Id=t.RoomType_Id";
             return DapperHelper<Rooms>.Query(sql,null);
         }
 
