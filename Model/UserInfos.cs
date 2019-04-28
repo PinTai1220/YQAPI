@@ -19,5 +19,10 @@ namespace Model
         public string Address { get; set; }//当前位置
         public string HeadImg { get; set; }//用户头像
 
+
+        public int orderid { get; set; }
+        public int state { get; set; }
+        
+
     }
 }
