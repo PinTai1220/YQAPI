@@ -23,7 +23,7 @@ namespace YQApi.Filters
             var method = request.Method.Method;
 
             // 私钥
-            var staffId = "^***********************************$";
+            var staffId = "^***********************************$"; 
 
             string timestamp = string.Empty, nonce = string.Empty, signature = string.Empty;
 
