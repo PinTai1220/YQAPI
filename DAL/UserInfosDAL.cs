@@ -40,7 +40,7 @@ namespace DAL
 
         public  int Update(UserInfos t)
         {
-            string sql = "update UserInfos set UserInfo_Name=@UserInfo_Name,UserInfo_Sex=@UserInfo_Sex,ID_Num=@ID_Num,Phone_Num=@Phone_Num,Address=@Address,HeadImg=@HeadImg";
+            string sql = "update UserInfos set UserInfo_Name=@UserInfo_Name,UserInfo_Sex=@UserInfo_Sex,ID_Num=@ID_Num where UserInfo_Id=@UserInfo_Id";
             return DapperHelper<object>.Execut(sql,t);
         }
     }
