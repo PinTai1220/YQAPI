@@ -42,7 +42,8 @@ namespace Commen
         public static List<T> Query(string SqlStr, object Obj)
         {
             IEnumerable<T> ie= conn.Query<T>(SqlStr, Obj);
-            return ie as List<T>;
+            List<T> ee= ie as List<T>;
+            return ee;
         }
         public static List<dynamic> QueryObj(string SqlStr, object Obj)
         {

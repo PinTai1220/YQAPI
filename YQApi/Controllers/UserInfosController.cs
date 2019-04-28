@@ -12,6 +12,7 @@ namespace YQApi.Controllers
     public class UserInfosController : ApiController
     {
         public IDataservices<UserInfos> UserInfos { get; set; }
+        public IDataservices<Orders> Orders { get; set; }
         [HttpGet]
         public List<UserInfos> Show()
         {
@@ -30,9 +31,25 @@ namespace YQApi.Controllers
         {
             UserInfos.Delete(Id);
         }
-        public void Update(UserInfos userInfos)
+        [HttpPost]
+        public int Update(UserInfos userInfos)
         {
-            UserInfos.Update(userInfos);
+            int res= UserInfos.Update(userInfos);
+            Orders ord = new Orders()
+            {
+                Order_Id = userInfos.orderid,
+                Room_State = userInfos.state
+            };
+            int res1 = Orders.Update(ord);
+            if (res == res1 && res == 1)
+            {
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
+               
         }
     }
 }

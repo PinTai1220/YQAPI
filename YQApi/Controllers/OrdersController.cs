@@ -6,6 +6,9 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Newtonsoft.Json;
+using System.IO;
+using System.Web;
 
 namespace YQApi.Controllers
 {
@@ -15,7 +18,7 @@ namespace YQApi.Controllers
         [HttpGet]
         public List<Orders> Show()
         {
-           return Orders.Show();
+            return Orders.Show();
         }
         [HttpPost]
         public void Create(Orders orders)
@@ -30,9 +33,18 @@ namespace YQApi.Controllers
         {
             Orders.Delete(Id);
         }
-        public void Update(Orders orders)
+        [HttpPost]
+        public void Update(UserInfos orders)
         {
-            Orders.Update(orders);
+            //Orders ordersResult = JsonConvert.DeserializeObject<Orders>(orders);
+
+            //Stream stream = HttpContext.Current.Request.InputStream;
+            //StreamReader streamReader = new StreamReader(stream);
+            //JsonReader reader = new JsonTextReader(streamReader);
+            //Orders result = JsonConvert.DeserializeObject<Orders>(reader);
+
+
+            //return Orders.Update();
         }
     }
 }
