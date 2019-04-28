@@ -22,6 +22,7 @@ namespace Model
         public int Room_State { get; set; }//房间编号
         public string Phone_Num { get; set; }//手机号
         public int Room_Num { get; set; }//房间号
+        public string UserInfo_Name { get; set; }
 
     }
 }

@@ -28,7 +28,7 @@ namespace DAL
 
         public  List<Orders> Show()
         {
-            string sql = "select a.*,b.Phone_Num,c.Room_Num from Orders a join UserInfos b on a.User_Id=b.UserInfo_Id  join Rooms c on a.Room_State=c.Room_Id";
+            string sql = "select a.*,b.UserInfo_Name,b.Phone_Num,c.Room_Num from Orders a join UserInfos b on a.User_Id=b.UserInfo_Id  join Rooms c on a.Room_State=c.Room_Id";
             return DapperHelper<Orders>.Query(sql,null);
         }
 
